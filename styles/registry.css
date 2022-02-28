@@ -1,0 +1,110 @@
+body {
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: white;
+}
+
+span {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .3s;
+}
+
+span:hover {
+    background-size: 100% 2px;
+}
+
+.tabs-wrapper {
+    color: white;
+}
+
+.tabs-wrapper .active {
+    color: white;
+    border-radius: 10px;
+    margin: 10px 10px;
+}
+
+.tabs {
+    margin: 10px 10px;
+}
+
+.reg-content {
+    overflow: hidden;
+    background-color: rgb(67, 69, 80);
+    padding: 40px 30px 30px 30px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 400px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    transition: transform 300ms, box-shadow 300ms;
+    box-shadow: 5px 10px 10px rgba(51, 53, 53, 0.2);
+}
+
+.reg-content::before,
+.reg-content::after {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 40%;
+    z-index: -1;
+}
+
+.reg-content::before {
+    left: 40%;
+    bottom: -130%;
+    background-color: rgba(51, 122, 199, 0.15);
+    animation: waves 7s infinite;
+}
+
+.reg-content>input {
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+    background: white;
+    width: 100%;
+    border: 0;
+    padding: 10px 10px;
+    margin: 15px -10px;
+    outline: none !important;
+}
+
+.reg-content>button {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 160px;
+    border: 0;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-left: -5px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: background-color 300ms;
+}
+
+.reg-content>button:hover {
+    background-color: rgba(51, 122, 199, 0.15);
+    color: aliceblue;
+}
+
+@keyframes waves {
+    from {
+        transition: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

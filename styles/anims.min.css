@@ -1,0 +1,108 @@
+.revealator-slideup,
+.revealator-slideleft,
+.revealator-slideright,
+.revealator-slidedown,
+.revealator-zoomout {
+    transition: all 600ms
+}
+
+.revealator-slideup {
+    transform: translate(0, 100px);
+    opacity: 0
+}
+
+.revealator-slideup.revealator-within,
+.revealator-slideup.revealator-partially-above,
+.revealator-slideup.revealator-above {
+    transform: translate(0, 0);
+    opacity: 1
+}
+
+.revealator-slideleft {
+    transform: translate(100px, 0);
+    opacity: 0
+}
+
+.revealator-slideleft.revealator-within,
+.revealator-slideleft.revealator-partially-above,
+.revealator-slideleft.revealator-above {
+    transform: translate(0, 0);
+    opacity: 1
+}
+
+.revealator-slideright {
+    transform: translate(-100px, 0);
+    opacity: 0
+}
+
+.revealator-slideright.revealator-within,
+.revealator-slideright.revealator-partially-above,
+.revealator-slideright.revealator-above {
+    transform: translate(0, 0);
+    opacity: 1
+}
+
+.revealator-zoomout {
+    transform: scale(1.5);
+    opacity: 0
+}
+
+.revealator-zoomout.revealator-within,
+.revealator-zoomout.revealator-partially-above,
+.revealator-zoomout.revealator-above {
+    transform: scale(1);
+    opacity: 1
+}
+
+.revealator-rotateleft {
+    transform: rotate(20deg);
+    opacity: 0
+}
+
+.revealator-rotateleft.revealator-within,
+.revealator-rotateleft.revealator-partially-above,
+.revealator-rotateleft.revealator-above {
+    transform: rotate(0);
+    opacity: 1
+}
+
+.revealator-delay1.revealator-below,
+.revealator-delay1.revealator-partially-below {
+    transition-delay: 0 !important
+}
+
+.revealator-delay2 {
+    transition-delay: 200ms !important
+}
+
+.revealator-delay2.revealator-below,
+.revealator-delay2.revealator-partially-below {
+    transition-delay: 0 !important
+}
+
+.revealator-delay4 {
+    transition-delay: 400ms !important
+}
+
+.revealator-delay4.revealator-below,
+.revealator-delay4.revealator-partially-below {
+    transition-delay: 0 !important
+}
+
+.revealator-delay6 {
+    transition-delay: 600ms !important
+}
+
+.revealator-delay6.revealator-below,
+.revealator-delay6.revealator-partially-below {
+    transition-delay: 0 !important
+}
+
+.revealator-delay8 {
+    transition-delay: 800ms !important
+}
+
+.revealator-delay8.revealator-below,
+.revealator-delay8.revealator-partially-below {
+    transition-delay: 0 !important
+}
